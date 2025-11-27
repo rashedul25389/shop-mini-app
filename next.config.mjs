@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactCompiler: true,
+    reactStrictMode: true,
+
+    // যদি proxy ব্যবহার করতে চাও:
+    async rewrites() {
+        return [
+            {
+                source: '/api/:path*',
+                destination: 'http://localhost:4000/:path*',
+            },
+        ];
+    },
 };
 
 export default nextConfig;
