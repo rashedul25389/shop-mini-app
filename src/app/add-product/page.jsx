@@ -9,7 +9,7 @@ export default function AddProductForm() {
         full_description: '',
         price: '',
         image: '',
-        products_priority: '', // high, medium, low
+        products_priority: '',
     });
 
     const handleChange = (e) =>
@@ -40,7 +40,7 @@ export default function AddProductForm() {
                 placeholder="Title"
                 required
                 className="border p-3 w-full rounded-lg bg-gray-50 text-gray-900
-                           focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+                        focus:outline-none focus:ring-2 focus:ring-green-500 transition"
             />
 
             <input
@@ -50,7 +50,7 @@ export default function AddProductForm() {
                 placeholder="Short Description"
                 required
                 className="border p-3 w-full rounded-lg bg-gray-50 text-gray-900
-                           focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+                        focus:outline-none focus:ring-2 focus:ring-green-500 transition"
             />
 
             <textarea
@@ -60,7 +60,7 @@ export default function AddProductForm() {
                 placeholder="Full Description"
                 required
                 className="border p-3 w-full rounded-lg bg-gray-50 text-gray-900
-                           focus:outline-none focus:ring-2 focus:ring-green-500 transition resize-none h-28"
+                        focus:outline-none focus:ring-2 focus:ring-green-500 transition resize-none h-28"
             />
 
             <input
@@ -71,7 +71,7 @@ export default function AddProductForm() {
                 type="number"
                 required
                 className="border p-3 w-full rounded-lg bg-gray-50 text-gray-900
-                           focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+                        focus:outline-none focus:ring-2 focus:ring-green-500 transition"
             />
 
             <input
@@ -80,7 +80,7 @@ export default function AddProductForm() {
                 onChange={handleChange}
                 placeholder="Image URL"
                 className="border p-3 w-full rounded-lg bg-gray-50 text-gray-900
-                           focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+                        focus:outline-none focus:ring-2 focus:ring-green-500 transition"
             />
 
             <select
@@ -89,7 +89,7 @@ export default function AddProductForm() {
                 onChange={handleChange}
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-900
-                           focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                        focus:outline-none focus:ring-2 focus:ring-green-500 transition">
                 <option value="">Select Priority</option>
                 <option value="high">High</option>
                 <option value="medium">Medium</option>
@@ -99,7 +99,7 @@ export default function AddProductForm() {
             <button
                 type="submit"
                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg w-full
-                           font-medium transition shadow-md">
+                        font-medium transition shadow-md">
                 Add Product
             </button>
         </form>

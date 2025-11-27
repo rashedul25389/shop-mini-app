@@ -12,7 +12,7 @@ export default function Navbar() {
     const [mobileMenu, setMobileMenu] = useState(false);
     const dropdownRef = useRef(null);
 
-    const pathname = usePathname(); // get current path
+    const pathname = usePathname();
 
     const handleLogout = () => {
         logout();
@@ -57,7 +57,6 @@ export default function Navbar() {
     return (
         <nav className="sticky top-0 bg-green-600 text-white shadow-lg z-50">
             <div className="container mx-auto flex justify-between items-center p-4">
-                {/* Logo */}
                 <Link href="/" className="font-bold text-xl">
                     Shop Mini
                 </Link>

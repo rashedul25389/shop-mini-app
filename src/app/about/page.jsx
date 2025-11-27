@@ -67,7 +67,7 @@ export default function AboutPage() {
             </section>
 
             {/* =========================
-                 MISSION / VISION
+                MISSION / VISION
             ========================== */}
             <section className="py-16 px-6 bg-white">
                 <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

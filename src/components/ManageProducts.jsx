@@ -13,7 +13,7 @@ export default function ManageProductsPage() {
     const fetchProducts = async () => {
         try {
             setLoading(true);
-            const res = await axios.get('/api/products'); // adjust your API route
+            const res = await axios.get('/api/products');
             setProducts(res.data);
         } catch (err) {
             console.error(err);

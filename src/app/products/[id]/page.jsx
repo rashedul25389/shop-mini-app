@@ -34,7 +34,7 @@ export default function ProductDetailsPage() {
 
     return (
         <div className="max-w-2xl mx-auto my-10 bg-white shadow-xl rounded-2xl overflow-hidden">
-            {/* ✅ Banner Image / Large Image */}
+            {/* Banner Image */}
             {product.image ? (
                 <img
                     src={product.image}

@@ -5,7 +5,7 @@ export default function HomePage() {
     return (
         <div className="min-h-screen flex flex-col">
             {/* =========================
-                 HERO SECTION
+                HERO SECTION
             ========================== */}
             <section className="relative bg-green-600 text-white py-24 px-6 text-center overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8')] bg-cover bg-center opacity-20"></div>
@@ -30,7 +30,7 @@ export default function HomePage() {
             </section>
 
             {/* =========================
-                 FEATURE SECTION
+                FEATURE SECTION
             ========================== */}
             <section className="py-16 px-6 bg-gray-50">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
@@ -70,10 +70,10 @@ export default function HomePage() {
             </section>
 
             {/* =========================
-                 BANNER SECTION
+                BANNER SECTION
             ========================== */}
             <section className="py-20 px-6 bg-green-700 text-white text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-800 via-green-700 to-green-600 opacity-40"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-green-800 via-green-700 to-green-600 opacity-40"></div>
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <h2 className="text-4xl font-bold mb-4">
                         Hot Deals of the Week
@@ -92,7 +92,7 @@ export default function HomePage() {
             </section>
 
             {/* =========================
-                 POPULAR PRODUCTS CTA
+                POPULAR PRODUCTS CTA
             ========================== */}
             <section className="py-16 px-6 bg-white text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">

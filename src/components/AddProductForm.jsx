@@ -26,15 +26,15 @@ export default function AddProductForm() {
                 data
             );
 
-            // SUCCESS SweetAlert (fixed colors)
+            // SUCCESS SweetAlert
             Swal.fire({
                 title: 'Product Added!',
                 text: 'Your product has been added successfully.',
                 icon: 'success',
-                background: '#ffffff', // clean white
-                color: '#1a1a1a', // dark text
-                iconColor: '#16a34a', // green icon
-                confirmButtonColor: '#16a34a', // green button
+                background: '#ffffff',
+                color: '#1a1a1a', 
+                iconColor: '#16a34a', 
+                confirmButtonColor: '#16a34a', 
                 confirmButtonText: 'OK',
             });
 

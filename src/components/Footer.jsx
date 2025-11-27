@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="bg-gray-900 text-gray-300 py-12 px-6">
             {/* MAIN GRID */}
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-                {/* BRAND */}
+
                 <div>
                     <h2 className="text-2xl font-bold text-white mb-3">
                         Shop Mini

@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
 
-    // যদি proxy ব্যবহার করতে চাও:
+    //  proxy
     async rewrites() {
         return [
             {
