@@ -10,10 +10,12 @@ export default function ManageProductsPage() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const BASE_URL = process.env.NEXT_PUBLIC_API_URL; // Example: https://your-backend-url.com
+
     const fetchProducts = async () => {
         try {
             setLoading(true);
-            const res = await axios.get('/api/products');
+            const res = await axios.get(`${BASE_URL}/products`);
             setProducts(res.data);
         } catch (err) {
             console.error(err);
@@ -44,7 +46,7 @@ export default function ManageProductsPage() {
 
         if (result.isConfirmed) {
             try {
-                await axios.delete(`/api/products/${id}`);
+                await axios.delete(`${BASE_URL}/products/${id}`);
                 Swal.fire(
                     'Deleted!',
                     'Your product has been deleted.',
@@ -83,8 +85,7 @@ export default function ManageProductsPage() {
                 {products.map((p) => (
                     <div
                         key={p._id}
-                        className="border border-gray-200 rounded-2xl p-4 shadow bg-green-100
-                        hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
+                        className="border border-gray-200 rounded-2xl p-4 shadow bg-green-100 hover:shadow-xl hover:-translate-y-1 transition-transform duration-300">
                         {p.image ? (
                             <img
                                 src={p.image}
