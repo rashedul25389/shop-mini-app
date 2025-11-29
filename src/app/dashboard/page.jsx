@@ -5,7 +5,7 @@ import AddProductForm from '@/components/AddProductForm';
 import ManageProducts from '@/components/ManageProducts';
 
 export default function DashboardPage() {
-    const [tab, setTab] = useState('add');
+    const [tab, setTab] = useState('manage');
 
     return (
         <PrivateRoute>

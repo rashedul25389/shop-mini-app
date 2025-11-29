@@ -14,7 +14,7 @@ export default function ProductDetailsPage() {
     useEffect(() => {
         axios
             .get(`http://localhost:4000/products/${id}`)
-            .then((res) => setProduct(res.data))
+            .then((res) => setProduct(res.data.result))
             .catch((err) => {
                 console.error(err);
                 alert('Product not found');
@@ -26,7 +26,7 @@ export default function ProductDetailsPage() {
     if (loading)
         return (
             <div className="p-6 text-center text-gray-700 text-xl font-semibold">
-                <Loader/>
+                <Loader />
             </div>
         );
 
