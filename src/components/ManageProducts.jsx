@@ -13,7 +13,7 @@ export default function ManageProductsPage() {
     const fetchProducts = async () => {
         try {
             setLoading(true);
-            const res = await axios.get('/api/products');
+            const res = await axios.get('http://localhost:4000/products');
             setProducts(res.data);
         } catch (err) {
             console.error(err);
@@ -44,7 +44,7 @@ export default function ManageProductsPage() {
 
         if (result.isConfirmed) {
             try {
-                await axios.delete(`/api/products/${id}`);
+                await axios.delete(`http://localhost:4000/products/${id}`);
                 Swal.fire(
                     'Deleted!',
                     'Your product has been deleted.',
