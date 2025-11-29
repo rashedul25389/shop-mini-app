@@ -7,7 +7,7 @@ import AuthProvider from '@/Context/AuthProviders';
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body>
+            <body suppressHydrationWarning={true}>
                 <AuthProvider>
                     <Navbar />
                     <div className="">

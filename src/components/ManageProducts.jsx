@@ -104,7 +104,7 @@ export default function ManageProductsPage() {
                             {p.short_description}
                         </p>
                         <p className="font-bold text-green-600 mb-3">
-                            ৳ {p.price}
+                            $ {p.price}
                         </p>
                         <p className="text-sm text-gray-500 mb-3">
                             Priority: {p.products_priority}
